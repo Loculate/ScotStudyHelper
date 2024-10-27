@@ -1,0 +1,73 @@
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #203853;
+    width: 95%;
+    border-radius: 10px;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+
+    scroll-snap-align: center; /* Snaps to the start of the section */
+    height: 95vh; /* Full viewport height for each section */
+    max-height: 95vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-left-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 600px;
+    height: 848px;
+    margin: 0px;
+}
+
+section .section-left-container p {
+    text-align: center;
+}
+
+section .section-left-container h4 {
+    margin-top: 3px;
+    margin-bottom: 0px;
+    text-align: left;
+    font-size: 4.5vw;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #D39B12;
+    display: block;
+}
+
+.section-right-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 988px;
+    max-width: 988px;
+    height: 848px;
+    background-color: #274567;
+    border-radius: 10px;
+    overflow-y: scroll; 
+    flex-direction: column; /* Added to ensure content stacks vertically */
+}
+
+.section-right-container p
+{
+    font-size: 1.2vw;
+    font-weight: 400;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10%;
+    scroll-snap-type: y mandatory; /* Enables scroll snapping on the y-axis */
+    height: 100vh; /* Full viewport height */
+}
